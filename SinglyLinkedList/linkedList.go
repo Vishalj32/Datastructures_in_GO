@@ -1,8 +1,9 @@
-package singlelinkedlist
+package SinglyLinkedList
 
 import (
-	"Datastructures_in_GO/SinglyLinkedList/src"
 	"fmt"
+
+	"github.com/Datastructures_in_GO/SinglyLinkedList/src"
 )
 
 //RunLinkedList executes LinkedList function

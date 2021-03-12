@@ -1,9 +1,9 @@
 package main
 
-import (
-	singlelinkedlist "Datastructures_in_GO/SinglyLinkedList"
-)
+import "github.com/Datastructures_in_GO/Queue"
 
 func main() {
-	singlelinkedlist.RunLinkedList()
+	//SinglyLinkedList.RunLinkedList()
+
+	Queue.QueueRunner()
 }
