@@ -20,6 +20,11 @@ func NewQueue(capacity int) *ArrayQueue {
 
 //Add := inserts the element at the front of the queue
 func (queue *ArrayQueue) Add(data int) {
+	if queue.Back == len(queue.Queue) {
+		newQueue := make([]int, 2*len(queue.Queue))
+		copy(newQueue, queue.Queue)
+		queue.Queue = newQueue
+	}
 	queue.Queue[queue.Back] = data
 	queue.Back++
 }
